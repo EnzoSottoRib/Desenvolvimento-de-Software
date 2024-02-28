@@ -1,3 +1,5 @@
+//Escrever um algoritmo que receba a altura e a largura de um retângulo e calcule a sua área.
+
 import java.util.Scanner;
 
 class Main{
