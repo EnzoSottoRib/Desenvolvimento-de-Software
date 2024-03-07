@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[ ] args){
+        Scanner myObj = new Scanner(System.in);
+        
+        int i = 0;
+        int[] notas = new int[5];
+        
+            System.out.println("Digite a matrícula: ");
+            int matricula = myObj.nextInt();
+            myObj.nextLine();
+            
+        
+            System.out.println("Digite o nome: ");
+            String nome = myObj.nextLine();
+            
+        while (i < 2){
+            System.out.println("Digite a nota " + (i + 1) + ":");
+            notas[i] = myObj.nextInt();
+            
+            i++;
+        }
+        
+        i = 0;
+        
+            System.out.println("Matricula: " + matricula);
+            System.out.println("Nome: " + nome);
+        
+        while (i < 2){
+            
+            System.out.println("Nota (" + (i + 1) + "): " + notas[i]);
+            
+            i++;
+        }
+        
+    }
+}
