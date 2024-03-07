@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[ ] args){
+        Scanner myObj = new Scanner(System.in);
+        
+        int i = 0;
+        int[] matriculas = new int[5];
+        String[] nomes = new String[5];
+        int[] primeiraNota = new int[5];
+        int[] segundaNota = new int[5];
+        float[] notasFinais = new float[5];
+        while (i < 5){
+            System.out.println("Digite a matrícula: ");
+            matriculas[i] = myObj.nextInt();
+            myObj.nextLine();
+            
+        
+            System.out.println("Digite o nome: ");
+            nomes[i] = myObj.nextLine();
+        
+            System.out.println("Digite a primeira nota: ");
+            primeiraNota[i] = myObj.nextInt();
+        
+            System.out.println("Digite a segunda nota: ");
+            segundaNota[i] = myObj.nextInt();
+        
+            notasFinais[i] = (primeiraNota[i] + segundaNota[i]) / 2;
+            
+            i++;
+        }
+        
+        i = 0;
+        
+        while (i < 5){
+            System.out.println("Aluno " + (i + 1));
+            System.out.println("Matricula: " + matriculas[i]);
+            System.out.println("Nome: " + nomes[i]);
+    
+            if (notasFinais[i] > 6){
+                System.out.println("Aprovado: (x) Sim ( ) Não");
+            } else {
+                System.out.println("Aprovado: ( ) Sim (x) Não");
+            }
+        
+            System.out.println("Nota final: " + notasFinais[i]);
+            
+            i++;
+        }
+        
+    }
+}
